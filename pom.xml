@@ -89,6 +89,7 @@
 			<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
+                <version>2.3</version>
                 <configuration>
                     <webXml>web/WEB-INF/web.xml</webXml>
                 </configuration>
@@ -122,14 +123,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
-
-			<plugin>
-				<inherited>true</inherited>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-			</plugin>
-
 		</plugins>
 	</build>
 </project>
