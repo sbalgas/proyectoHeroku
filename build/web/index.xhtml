@@ -36,14 +36,23 @@
         </style>
     </h:head>
     <h:body>
+        
+        <ui:composition template="./resources/Template/FcletTemplate.xhtml">
+            <ui:define name="content">
+                
+            
+                            
+
         <p:panel id="pnlProjecto" header="Projecto">
             <h:form id="form">
-                <p:imageCompare leftImage="/resources/img/antes.png"
-                                rightImage="/resources/img/2.jpg"
-                                width="1200" height="400"/>
-                <p:sidebar widgetVar="sidebar5" fullScreen="true" baseZIndex="10000">
-                    <h3 style="font-weight:normal">Integrantes: </h3>
-
+                <p:imageCompare rightImage="/resources/img/Antes.png"
+                                leftImage="/resources/img/Despues.png"
+                                width="1200" height="300"/>
+                <p:sidebar widgetVar="sidebar5" position="top" baseZIndex="20000">
+                    <h2 style="font-weight:normal">Integrantes: </h2>
+                    <h1 style="font-weight:normal">Farfán, Samanta Lihué </h1>
+                    <h1 style="font-weight:normal">Rojas, Romina Nicole </h1>
+                    <h1 style="font-weight:normal">Said, Lilia Yazmin </h1>
                     <p:commandButton value="Cancel" oncomplete="PF('sidebar5').hide()"/>
                 </p:sidebar>
 
@@ -92,6 +101,9 @@
             </h:form>
 
         </p:panel>
+                
+                </ui:define>
+        </ui:composition>
     </h:body>
 
 </html>
